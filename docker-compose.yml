@@ -1,0 +1,12 @@
+services:
+  docker-nanominer:
+    image: codeschooldropout/docker-nanominer
+    container_name: docker-nanominer
+    runtime: nvidia
+    privileged: true
+    ports:
+      - 8081:8081
+    volumes:
+      - /mnt/user/appdata/docker-nanominer/config.ini:/nanominer/config.ini
+      - /mnt/user/appdata/docker-nanominer/logs:/logs
+    restart: unless-stopped
