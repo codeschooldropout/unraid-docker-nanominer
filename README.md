@@ -1,6 +1,6 @@
 <div align="center">
-  <a href="https://github.com/codeschooldropout/docker-nanominer">
-    <h3 align="center">docker-nanominer</h3>
+  <a href="https://github.com/codeschooldropout/unraid-docker-nanominer">
+    <h3 align="center">unraid-docker-nanominer</h3>
   </a>
 
   <p align="center">
@@ -30,18 +30,22 @@ Install plugins via Community Applications in Unraid
 
 * [Unraid - Nvidia Driver](https://forums.unraid.net/topic/98978-plugin-nvidia-driver/)
 
+Install for overclocking GPUs
+
+* [Unraid Overclock](https://github.com/codeschooldropout/unraid-nvidia-overclock)
+
 ### Installation
 
-1. Clone the repo somewhere on your array - i.e. /mnt/user/appdata/docker-nanominer.git
+1. Clone the repo somewhere on your array - i.e. /mnt/user/appdata/unraid-docker-nanominer
 
    ```sh
-   git clone https://github.com/codeschooldropout/docker-nanominer.git
+   git clone https://github.com/codeschooldropout/unraid-docker-nanominer.git
    ```
 
-2. Deploy via command line since Unraid interface can't handle files?
+2. Deploy via command line since Unraid interface can't handle the file mount
 
     ```sh
-    docker run --privileged -it --name='docker-nanominer' --runtime=nvidia -p '8081:8081' -v ${PWD}/config_satori_merged.ini:/nanominer/config.ini codeschooldropout/docker-nanominer
+    docker run --privileged -it --name='unraid-docker-nanominer' --runtime=nvidia -p '8081:8081' -v ${PWD}/config_satori_merged.ini:/nanominer/config.ini codeschooldropout/unraid-docker-nanominer
     ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -51,7 +55,7 @@ Install plugins via Community Applications in Unraid
 
 * [ ] Figure out way around loading config file that isn't 3000 env vars
 
-See the [open issues](https://github.com/codeschooldropout/docker-nanominer) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/codeschooldropout/unraid-docker-nanominer) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -83,6 +87,6 @@ Don't forget to give the project a star! Thanks again!
 
 codeschooldropout - [@codedropout](https://twitter.com/codedropout)
 
-Project Link: [https://github.com/codeschooldropout/docker-nanominer](https://github.com/codeschooldropout/docker-nanominer)
+Project Link: [https://github.com/codeschooldropout/unraid-docker-nanominer](https://github.com/codeschooldropout/unraid-docker-nanominer)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
